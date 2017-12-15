@@ -11,16 +11,16 @@
 </head>
 <body ng-app="Morpion" ng-controller="MorpionController as ctrl">
     <div class="results" ng-show="ctrl.results">
-        <h1 ng-show="!ctrl.isDraw">{{ctrl.winner}} a gagné la partie !</h1>
-        <h1 ng-show="ctrl.isDraw">match nul !</h1>
-    </div>
-    <h1 ng-show="!ctrl.playing">
-        <a href="" ng-click="ctrl.start()">
-            {{ctrl.results ? 'Recommencer' : 'Commencer' | uppercase}} la partie
-        </a>
-    </h1>
-    <div class="game"  ng-show="ctrl.playing">
-        <morpion></morpion>
-    </div>     
+		<h1 ng-show="!ctrl.isDraw">{{ ctrl.winner }} a gagné la partie !</h1>
+		<h1 ng-show="ctrl.isDraw">Match nul !</h1>
+	</div>
+	<h1 ng-show="!ctrl.playing">
+		<a href="" ng-click="ctrl.start()">
+			{{ ctrl.results ? 'Recommencer' : 'Commencer' }} la partie
+		</a>
+	</h1>
+	<div class="game" ng-show="ctrl.playing">
+		<morpion></morpion>
+	</div>    
 </body>
 </html>
