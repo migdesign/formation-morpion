@@ -6,7 +6,8 @@ angular.module('Morpion')
         this.winner;
         this.start = ()=>{
             this.playing=true;
-            $rootScope.$Broadcast('morpion-start');//emission de l'événement "morpion-start" en broadcast
+            this.results = false;
+            $rootScope.$broadcast('morpion-start');//emission de l'événement "morpion-start" en broadcast
         };
         $scope.$on('morpion-stop', ()=>{
             this.results=true;

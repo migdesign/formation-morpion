@@ -7,6 +7,7 @@ angular.module('Morpion')
             let checkCase = (c1,c2,c3)=>{
                 return c1 ? c1 === c2 && c1 === c3 : false;
             };
+
             ctrl.checkWin = () =>{
                 console.log(gameData.values);
                 console.log(gameData);
@@ -43,7 +44,7 @@ angular.module('Morpion')
                         gameData.values[4],
                         gameData.values[6]);
 
-                console.log('result diag - '+i+' : ' + result);
+                console.log('result diag -  : ' + result);
                 //ctrl.result=result;
                 //pas de gagnant et que le tableau est plein
                 let isDraw = !result && Object.keys(gameData.values).length === 9;

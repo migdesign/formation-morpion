@@ -20,7 +20,7 @@ angular.module('Morpion')
                 }else{
                     console.log('PLAYED !')
                     console.log('Imposssible de jouer ici ...');
-                }
+                };
                 
                 ctrl.reset = () =>{
                     ctrl.playerClass = '';
